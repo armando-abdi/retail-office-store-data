@@ -1,0 +1,3 @@
+categories_sales_highest_lowest = superstore_df.groupby(['Category', 'Sub-Category'])['Sales'].sum().reset_index()
+
+monthly_sales = superstore_df.groupby(superstore_df['Order Date'])['Sales'].
